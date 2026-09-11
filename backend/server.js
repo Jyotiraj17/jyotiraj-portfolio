@@ -89,17 +89,19 @@ app.use((err, req, res, next) => {
 });
 
 // Start Server
-async function startServer() {
-  // Connect to DB asynchronously
-  await connectDB();
+// Connect to MongoDB
+connectDB();
 
-  app.listen(PORT, () => {
-    console.log(`\n======================================================`);
-    console.log(`🚀 Jyotiraj Panda Portfolio Server is running!`);
-    console.log(`📍 Local URL:     http://localhost:${PORT}`);
-    console.log(`📡 API Health:    http://localhost:${PORT}/api/health`);
-    console.log(`======================================================\n`);
-  });
+// Export Express app for Vercel
+module.exports = app;
+
+// Start local server only when running locally
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`\n======================================================`);
+        console.log(`🚀 Jyotiraj Panda Portfolio Server is running!`);
+        console.log(`📍 Local URL: http://localhost:${PORT}`);
+        console.log(`📡 API Health: http://localhost:${PORT}/api/health`);
+        console.log(`======================================================\n`);
+    });
 }
-
-startServer();
