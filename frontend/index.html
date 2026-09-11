@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jyotiraj Panda — Full-Stack Portfolio</title>
+  
+  <meta name="description" content="Portfolio of Jyotiraj Panda — Computer Science Engineer, Full Stack Developer, AI/ML Enthusiast, and Data Science Developer with experience at Tata Steel SEZ and AiRobosoft.">
+  <meta name="author" content="Jyotiraj Panda">
+  <meta name="keywords" content="Jyotiraj Panda, Full Stack Developer, AI Engineer, Data Science, Portfolio, React, Node.js, MongoDB, Python">
+
+  <!-- Google Fonts: Inter, Outfit, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==================== Header / Navbar ==================== -->
+  <header class="header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <img src="assets/images/profilephoto.jpeg" alt="Jyotiraj Panda" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; object-position: 50% 12%; border: 2px solid var(--accent-primary); box-shadow: 0 0 10px rgba(99, 102, 241, 0.4);">
+        <span>Jyotiraj<span class="text-cyan"> Panda</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle Theme">
+          <span id="themeIcon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+        </button>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== Hero Section ==================== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="hero-status">
+          <span class="pulse-dot"></span>
+          <span>Available for New Opportunities</span>
+        </div>
+
+        <div class="hero-greeting">&lt;Hello, World! I am /&gt;</div>
+        <h1 class="hero-title">Jyotiraj <span class="text-gradient">Panda</span></h1>
+
+        <div class="hero-role">
+          <span id="heroRoleText">Full Stack Developer</span>
+          <span class="typing-cursor">|</span>
+        </div>
+
+        <p class="hero-summary">
+          Computer Science student at NIST University building high-performance web applications, WCAG-accessible AI platforms, and automated machine learning pipelines. Experienced in React, Node.js, Express, and Python.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span>Download Resume</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number text-gradient">5+</span>
+            <span class="stat-label">Major Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number text-cyan">3</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number text-gradient">7.91</span>
+            <span class="stat-label">NIST CGPA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual / Floating Card -->
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="visual-backdrop"></div>
+        
+        <div class="profile-card">
+          <div class="profile-img-wrap">
+            <img src="assets/images/profilephoto.jpeg" alt="Jyotiraj Panda — Full Stack Developer & AI Engineer" class="profile-img" loading="eager">
+          </div>
+
+          <div class="profile-info">
+            <h2 class="profile-name">Jyotiraj Panda</h2>
+            <div class="profile-tagline">B.Tech CSE @ NIST (2023-27)</div>
+            
+            <div class="profile-tech-stack">
+              <span class="badge">React.js</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">MongoDB</span>
+              <span class="badge">Python</span>
+              <span class="badge">Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating UI Accents -->
+        <div class="floating-pill pill-1">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span>Full-Stack Architecture</span>
+        </div>
+        <div class="floating-pill pill-2">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <span>AI & Data Analytics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== About Section ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">&lt;Background /&gt;</span>
+        <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+        <p class="section-description">Bridging front-end design, back-end engineering, and data science intelligence.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h3>Passionate Engineer blending Web Technologies with Machine Learning</h3>
+          <p>
+            I am a Computer Science and Engineering undergraduate at <strong>NIST University</strong>, driven by an ambition to build high-impact digital solutions. My profile uniquely intersects modern full-stack web development with Python-based data science and machine learning.
+          </p>
+          <p>
+            From engineering a digitized gate-pass ecosystem at <strong>Tata Steel SEZ</strong> to architecting role-based hostel ERP systems and developing WCAG-compliant legal assistants, I enjoy tackling complex architectural problems with clean, scalable code.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <div class="highlight-icon">⚡</div>
+              <div class="highlight-title">Full Stack Focus</div>
+              <div class="highlight-desc">MERN Stack, RESTful APIs, JWT authentication, and responsive UI/UX architecture.</div>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-icon">📊</div>
+              <div class="highlight-title">Data Analytics & ML</div>
+              <div class="highlight-desc">EDA, predictive regression modeling, automated visualizations, and feature engineering.</div>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-icon">🏢</div>
+              <div class="highlight-title">Industrial Internships</div>
+              <div class="highlight-desc">Hands-on experience at Tata Steel SEZ, AiRobosoft, and NIST University.</div>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-icon">🎯</div>
+              <div class="highlight-title">Accessibility & Quality</div>
+              <div class="highlight-desc">Commitment to WCAG accessibility, semantic HTML, and clean code principles.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="education-wrapper reveal reveal-delay-2">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            Education History
+          </h3>
+          <div class="education-timeline" id="educationTimeline">
+            <!-- Dynamically injected via main.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Skills Section ==================== -->
+  <section class="section" id="skills" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">&lt;Expertise /&gt;</span>
+        <h2 class="section-title">Technical <span class="text-gradient">Proficiencies</span></h2>
+        <p class="section-description">A categorized overview of the languages, frameworks, libraries, and tools I use.</p>
+      </div>
+
+      <div class="skills-categories-grid" id="skillsContainer">
+        <!-- Dynamically rendered via main.js -->
+      </div>
+
+      <!-- Core Competencies & Soft Skills -->
+      <div class="competencies-box reveal">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Core Competencies & Professional Strengths</h3>
+        <p style="font-size: 0.92rem; color: var(--text-muted);">Key attributes applied across engineering projects and team environments.</p>
+        
+        <div class="competencies-grid">
+          <div class="comp-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Full Stack Development
+          </div>
+          <div class="comp-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            REST API Design
+          </div>
+          <div class="comp-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Machine Learning & Data Science
+          </div>
+          <div class="comp-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Data Visualization
+          </div>
+          <div class="comp-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Decision Making & Analysis
+          </div>
+          <div class="comp-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Business Communication
+          </div>
+          <div class="comp-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Team Collaboration
+          </div>
+          <div class="comp-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Responsive Design & Accessibility
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Experience Section ==================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">&lt;Career /&gt;</span>
+        <h2 class="section-title">Internship <span class="text-gradient">Experience</span></h2>
+        <p class="section-description">Practical engineering experience solving real operational problems in industrial and research settings.</p>
+      </div>
+
+      <div class="timeline" id="experienceTimeline">
+        <!-- Dynamically rendered via main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Projects Section ==================== -->
+  <section class="section" id="projects" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">&lt;Portfolio /&gt;</span>
+        <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="section-description">Production-ready applications, analytical systems, and accessible AI assistants.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="datascience">Data Science & ML</button>
+        <button class="filter-btn" data-filter="ai">AI & Research</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Dynamically injected via projects.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Certifications Section ==================== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">&lt;Credentials /&gt;</span>
+        <h2 class="section-title">Professional <span class="text-gradient">Certifications</span></h2>
+        <p class="section-description">Verified certifications in Generative AI, MLOps, Data Analytics, and Professional Skills.</p>
+      </div>
+
+      <div class="certs-grid" id="certsGrid">
+        <!-- Dynamically injected via main.js -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== Contact Section ==================== -->
+  <section class="section" id="contact" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">&lt;Get in Touch /&gt;</span>
+        <h2 class="section-title">Contact <span class="text-gradient">Information</span></h2>
+        <p class="section-description">Feel free to reach out for software engineering roles, project discussions, or data science collaborations.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Details Column -->
+        <div class="contact-info reveal">
+          <h3 style="font-size: 1.6rem; margin-bottom: 0.8rem;">Let's Connect & Collaborate</h3>
+          <p style="margin-bottom: 1.5rem; line-height: 1.7;">
+            I'm currently seeking new internship and full-time software engineering opportunities. Whether you have a project idea, question, or opportunity, my inbox is always open.
+          </p>
+
+          <div class="contact-info-list">
+            <!-- Email -->
+            <a href="mailto:jyotirajpanda17@gmail.com" class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Email Address</div>
+                <div class="contact-card-val">jyotirajpanda17@gmail.com</div>
+              </div>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+919938231922" class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Phone Number</div>
+                <div class="contact-card-val">+91 9938231922</div>
+              </div>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Location</div>
+                <div class="contact-card-val">Bakilikona, Odisha, India</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="https://linkedin.com/in/jyotiraj-panda-17a9bb36a" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/jyotiraj17" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form Column -->
+        <div class="contact-form-card reveal reveal-delay-2">
+          <h3 style="font-size: 1.4rem; margin-bottom: 1.2rem;">Send a Message</h3>
+          
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Your Name *</label>
+              <input type="text" id="contactName" class="form-control" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Your Email *</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <input type="text" id="contactSubject" class="form-control" placeholder="Project collaboration / Inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Your Message *</label>
+              <textarea id="contactMessage" class="form-control" rows="5" placeholder="Hi Jyotiraj, I would like to discuss..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        © 2026 <strong>Jyotiraj Panda</strong>. All rights reserved. • Built with modern HTML, CSS & JavaScript.
+      </div>
+      <button class="back-to-top" id="backToTop" title="Back to Top" aria-label="Back to Top" style="display: none;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

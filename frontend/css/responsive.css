@@ -1,0 +1,172 @@
+/* ==========================================================================
+   Jyotiraj Panda — Responsive Stylesheet
+   ========================================================================== */
+
+/* --- Tablet / Medium Devices (max-width: 992px) --- */
+@media screen and (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-content {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-visual {
+    order: 2;
+  }
+
+  .hero-summary {
+    margin-inline: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .floating-pill.pill-1 {
+    right: 0;
+  }
+  .floating-pill.pill-2 {
+    left: 0;
+  }
+}
+
+/* --- Mobile Navigation & Handhelds (max-width: 768px) --- */
+@media screen and (max-width: 768px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 280px;
+    height: calc(100vh - var(--header-height));
+    background: var(--bg-secondary);
+    border-left: 1px solid var(--border-subtle);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.2rem 1.8rem;
+    gap: 1.4rem;
+    transition: right var(--transition-bounce);
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.05rem;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 1.8rem;
+  }
+
+  .timeline::before {
+    left: 6px;
+  }
+
+  .timeline-dot {
+    left: -1.8rem;
+    width: 16px;
+    height: 16px;
+    top: 22px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-card {
+    padding: 1.5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+/* --- Small Phones (max-width: 480px) --- */
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .profile-card {
+    padding: 1.2rem;
+  }
+
+  .profile-img-wrap {
+    height: 280px;
+  }
+
+  .floating-pill {
+    display: none; /* Avoid overflowing mobile screens */
+  }
+}
